@@ -3,4 +3,5 @@ This is a collection of code examples written in the Hy programming language. Th
 ## List of Programs
 - FizzBuzz
 - Binary search algorithm
+- Quicksort sorting algorithm (simplified)
 - More stuff coming soon
