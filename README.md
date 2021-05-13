@@ -4,4 +4,5 @@ This is a collection of code examples written in the Hy programming language. Th
 - FizzBuzz
 - Binary search algorithm
 - Quicksort sorting algorithm (simplified)
+- Sierpinski Triangle (requires Pillow/PIL)
 - More stuff coming soon
