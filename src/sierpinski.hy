@@ -3,7 +3,7 @@
 (setv fg-color (, 255 255 255))
 (setv bg-color (, 0 0 0))
 (setv dimensions (, 2000 2000))
-(setv file-path "sierpenski.png")
+(setv file-path "sierpinski.png")
 
 (defn draw-iteration [draw x y w h]
   ;; Stop drawing when the subdivisions get too small.
@@ -38,4 +38,5 @@
 ;; Begin descent into recursive hell.
 (draw-iteration draw 0 0 (first dimensions) (last dimensions))
 
+(print f"Output saved to: {file-path}")
 ((. img save) file-path)
