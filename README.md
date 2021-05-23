@@ -3,6 +3,6 @@ This is a collection of code examples written in the Hy programming language. Th
 ## List of Programs
 - FizzBuzz
 - Binary search algorithm
-- Quicksort sorting algorithm (simplified)
+- Quicksort sorting algorithm (simplified and traditional implementations)
 - Sierpinski Triangle (requires Pillow/PIL)
 - More stuff coming soon
