@@ -30,12 +30,10 @@
   (+ i 1))
 
 (defn quicksort-trad [arr low high]
-  (if (< low high)
-    (do
-      (setv partition-index (partition arr low high))
-      (quicksort-trad arr low (- partition-index 1))
-      (quicksort-trad arr (+ partition-index 1) high)))
-  None)
+  (when (< low high)
+    (setv partition-index (partition arr low high))
+    (quicksort-trad arr low (- partition-index 1))
+    (quicksort-trad arr (+ partition-index 1) high)))
 
 (setv arr [2 6 3 14 19 5 1 7])
 (print "Simplified Implementation:")
