@@ -6,3 +6,5 @@ This is a collection of code examples written in the Hy programming language. Th
 - Quicksort sorting algorithm (simplified and traditional implementations)
 - Sierpinski Triangle (requires Pillow/PIL)
 - More stuff coming soon
+## Generating Python Translations of Programs
+To get a better idea of how code in Hy corresponds to Python code, you can use the provided `pythontranslations.hy` script to generate equivalent Python programs from all the examples. This works using the same `ast.unparse()` trick as Hy's built-in `hy2py` script. Unfortunately as a consequence of this, the generated code will often be poorly formatted, and in some cases (macros particularly) near-unreadable.
