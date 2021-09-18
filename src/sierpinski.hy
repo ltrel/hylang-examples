@@ -30,13 +30,13 @@
 (setv draw ((. ImageDraw Draw) img))
 
 ;; Draw initial triangle.
-(setv points [(, 0 (last dimensions))
-              (, (first dimensions) (last dimensions))
-              (, (// (first dimensions) 2) 0)])
+(setv points [(, 0 (get dimensions 1))
+              (, (get dimensions 0) (get dimensions 1))
+              (, (// (get dimensions 0) 2) 0)])
 ((. draw polygon) points :fill fg-color)
 
 ;; Begin descent into recursive hell.
-(draw-iteration draw 0 0 (first dimensions) (last dimensions))
+(draw-iteration draw 0 0 (get dimensions 0) (get dimensions 1))
 
 (print f"Output saved to: {file-path}")
 ((. img save) file-path)

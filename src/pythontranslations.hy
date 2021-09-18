@@ -14,7 +14,7 @@
           hy-syntax-tree (hy-parse hy-source)
           python-syntax-tree (hy-compile hy-syntax-tree "__main__")
           python-source ((. ast unparse) python-syntax-tree)
-          out-name (+ (first ((. entry name split) "." 1)) ".py"))
+          out-name (+ (get ((. entry name split) "." 1) 0) ".py"))
 
     (with [f (open ((. os path join) out-dir out-name) "w")]
       ((. f write) python-source)))) 
